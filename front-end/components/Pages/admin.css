@@ -1,0 +1,48 @@
+
+.adminContainer input {
+    border-radius: 4px;
+    padding: 8px;
+    text-align: center;
+    width: 75%;
+}
+
+.adminContainer button {
+    background: #370000;
+    border: 1px solid grey;
+    border-radius: 8px;
+    box-shadow: 0 0 8px black inset;
+    color: darkolivegreen;
+    padding: 16px 32px;
+    margin: 32px;
+    transition: .25s;
+}
+
+.adminContainer button:hover {
+    background: darkolivegreen;
+    color: #370000;
+    cursor: pointer;
+    padding: 16px 40px;
+}
+
+.adminContainer button:focus {
+    outline: none;
+}
+#box {
+  margin-top: 15px;
+  outline: solid;
+}
+
+#box .box-top {
+  color: #fff;
+  text-shadow: 0 1px #000;
+  background: darkolivegreen;
+  padding: 5px;
+  padding-left: 15px;
+  font-weight: 300;
+}
+
+#box .box-panel {
+  padding: 15px;
+  background: #fff;
+  color: #333;
+}

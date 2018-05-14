@@ -1,0 +1,101 @@
+/****************************************/
+/***** ***** Login / Register ***** *****/
+/****************************************/
+.loginAndRegistryContainer {
+    background: black;
+    border-radius: 16px;
+    box-shadow: 0 0 16px darkolivegreen inset, 0 0 32px black;
+    opacity: .75;
+    position: fixed;
+    bottom: 5%;
+    left: calc(50% - 250px);
+    width: 500px;
+
+    animation-name: popUpEntrance;
+    animation-duration: .5s;
+}
+
+@keyframes popUpEntrance {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 0.9;
+        transform: scale(1);
+    }
+}
+
+.loginAndRegistryContainer input {
+    border-radius: 4px;
+    padding: 8px;
+    text-align: center;
+    width: 75%;
+}
+
+.loginAndRegistryContainer button {
+    background: #370000;
+    border: 1px solid grey;
+    border-radius: 8px;
+    box-shadow: 0 0 8px black inset;
+    color: darkolivegreen;
+    padding: 16px 32px;
+    margin: 32px;
+    transition: .25s;
+}
+
+.loginAndRegistryContainer button:hover {
+    background: darkolivegreen;
+    color: #370000;
+    cursor: pointer;
+    padding: 16px 40px;
+}
+
+.loginAndRegistryContainer button:focus {
+    outline: none;
+}
+
+/***************************************/
+/***** ***** Fly Out Options ***** *****/
+/***************************************/
+.splashScreenContainer .logout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background: black;
+    border-radius: 0 16px 16px 0;
+    opacity: .5;
+    padding: 16px;
+    position: fixed;
+    top: 32px;
+    left: -108px;
+    width: 200px;
+    transition: .5s;
+}
+
+.splashScreenContainer .logout:hover {
+    position: fixed;
+    top: 32px;
+    left: 0;
+    opacity: 1;
+}
+
+.splashScreenContainer .logout .options {
+    grid-column-start: 1;
+    grid-row-start: 1;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    cursor: pointer;
+    line-height: 32px;
+    padding-right: 32px;
+}
+
+.splashScreenContainer .logout img {
+    grid-column-start: 2;
+    width: 100%;
+}

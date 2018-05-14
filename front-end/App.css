@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    color: grey;
+    font-family: 'Special Elite', "Courier New", monospace;
+    font-size: 1em;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --setupText-dark: #370000;
+    --setupText-light: darkred;
+    --connectionsText-dark: darkgreen;
+    --connectionsText-light: green;
+}
+
+.App {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    letter-spacing: 0.5em;
+    padding: 32px;
+}
+
+h2 {
+    font-size: 2em;
+    letter-spacing: 0.25em;
+    margin: auto auto;
+    padding: 32px 72px;
+    width: fit-content;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    padding: 4px;
+}
+
+.pageBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+ #mainNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#mainNav li {
+    float: left;
+}
+
+#mainNav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+#mainNav li a:hover {
+    background-color: #111;
+}
+
+.navbar ul > li:nth-last-of-type(-n+2) {
+    float:right;
+}
